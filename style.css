@@ -33,10 +33,6 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
-  margin: 0;
-}
-
 nav ul li a {
   display: block;
   padding: 15px 20px;
@@ -88,6 +84,30 @@ section h2 {
 
 ul {
   list-style: disc inside;
+}
+
+/* Gallery and video styling */
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.video-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.video-container video {
+  max-width: 100%;
+  border-radius: 4px;
 }
 
 footer {
