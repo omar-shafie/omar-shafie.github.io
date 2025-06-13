@@ -95,7 +95,10 @@ ul {
 }
 
 .gallery img {
-  max-width: 100%;
+  /* make each image take up roughly half the row */
+  flex: 1 1 calc(50% - 10px);
+  /* ensure they don’t exceed their column */
+  max-width: calc(50% - 10px);
   height: auto;
   border-radius: 4px;
 }
