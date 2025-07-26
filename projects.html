@@ -1,9 +1,36 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects – Omar Shafie</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Optional inline styles - move to style.css later */
+    .gallery img {
+      max-width: 300px;
+      margin: 0.5rem;
+      border-radius: 8px;
+    }
+
+    .video-container video {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .project-detail {
+      margin-bottom: 3rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .project-detail h3 {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,40 +49,50 @@
   </nav>
 
   <main>
-    <section id="projects">
-      <h2>Key Projects</h2>
+
+    <!-- Embedded Smart Lock Puzzle FIRST -->
+    <div class="project-detail">
+      <h3>Embedded Smart Lock Puzzle</h3>
+      <p><em>Feb 2024 – Present | Academic Project</em></p>
       <ul>
-        <li><strong>"All Grip" Power In Community</strong> – Designed & tested an AutoCAD-based interchangeable grabber head (Jan–Apr 2024)</li>
+        <li>Programmed a Cortex ARM microcontroller in C++ to control an RFID-based solenoid lock system, enabling secure access through RFID-embedded 3D-printed figures.</li>
+        <li>Applied principles of embedded systems, digital logic, circuit design, and hardware integration to develop a functional and interactive locking mechanism.</li>
       </ul>
 
-      <!-- Embedded Smart Lock Puzzle Project -->
-      <div class="project-detail">
-        <h3>Embedded Smart Lock Puzzle</h3>
-        <p><em>Feb 2024 – Present | Academic Project</em></p>
-        <ul>
-          <li>Programmed a Cortex ARM microcontroller in C++ to control an RFID-based solenoid lock system, enabling secure access through RFID-embedded 3D-printed figures.</li>
-          <li>Applied principles of embedded systems, digital logic, circuit design, and hardware integration to develop a functional and interactive locking mechanism.</li>
-        </ul>
-
-        <!-- Gallery placeholder -->
-        <!-- Upload your images as assets/images/lock1.jpg and lock2.jpg -->
-        <div class="gallery">
-          <img src="assets/images/2TA4_Project_Front.jpg" alt="Front of the Build – Photo 1">
-          <img src="assets/images/2TA4_Project_Wiring.jpg" alt="Messy wiring of the build, including an STMF432 and an arduino – Photo 2">
-        </div>
-
-        <!-- Video placeholder -->
-        <!-- Upload your demo video as assets/videos/lock-demo.mp4 -->
-        <div class="video-container">
-          <video controls>
-            <source src="assets/videos/lock-demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <div class="gallery">
+        <img src="assets/images/2TA4_Project_Front.jpg" alt="Front of the Build – Photo 1">
+        <img src="assets/images/2TA4_Project_Wiring.jpg" alt="Messy wiring of the build, including an STMF432 and an arduino – Photo 2">
       </div>
 
-    </section>
+      <div class="video-container">
+        <video controls>
+          <source src="assets/videos/lock-demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- All Grip Project SECOND -->
+    <!-- All Grip Project -->
+    <div class="project-detail">
+      <h3>All Grip – Interchangeable Multi-use Reacher Grabber Head</h3>
+      <p><em>Jan – Apr 2024 | Group Engineering Design Project</em></p>
+      <ul>
+        <li>Designed and tested an interchangeable grabber head using AutoCAD, enabling versatile use for individuals with limited mobility.</li>
+        <li>Conducted ergonomic testing and iterative prototyping to improve grip functionality, strength, and attachment design.</li>
+        <li>Worked collaboratively with a multidisciplinary team to meet accessibility, cost, and functionality criteria.</li>
+      </ul>
+
+      <!-- Two side-by-side images -->
+      <div class="gallery">
+        <img src="assets/images/allgrip1.jpg" alt="final product">
+        <img src="assets/images/allgrip2.jpg" alt="hands on">
+      </div>
+
+    </div>
+
   </main>
+
   <footer>
     <p>&copy; 2025 Omar Shafie</p>
   </footer>

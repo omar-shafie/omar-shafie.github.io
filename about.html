@@ -1,14 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About – Omar Shafie</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Suggested additional styling — move to style.css if needed */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+
+    .about-photo {
+      flex: 1 1 250px;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .about-content {
+      flex: 2 1 400px;
+    }
+
+    .about-content h2 {
+      margin-top: 0;
+    }
+
+    .quick-facts {
+      margin-top: 1rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .quick-facts li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>About Me</h1>
   </header>
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -19,13 +58,32 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
   <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>Passionate Mechatronics & Management student at McMaster University specializing in renewable energy and modern technology. I combine technical expertise in software & embedded systems with strong financial acumen.</p>
-      <p>Originally from Egypt, now based in Oakville, Ontario, I bring a diverse global perspective and adaptability to every project.</p>
+    <section id="about" class="about-container">
+      <!-- Add your real image in assets/images/about-me.jpg -->
+      <img src="assets/images/about-me.jpg" alt="Omar Shafie Portrait" class="about-photo" />
+
+      <div class="about-content">
+        <h2>Hi, I’m Omar — an engineer with vision and versatility.</h2>
+        <p>
+          I'm a Mechatronics & Management student at McMaster University, driven by a passion for innovation at the intersection of hardware, software, and strategy. My experience spans embedded systems, automation, and financial leadership — all fueled by a desire to create accessible, sustainable solutions that make a real-world impact.
+        </p>
+        <p>
+          Whether I'm prototyping assistive devices, coding for smart locks, or managing a student organization’s budget, I bring curiosity, precision, and people-first thinking to everything I do.
+        </p>
+
+        <ul class="quick-facts">
+          <li><strong>🎓 Program:</strong> Mechatronics Engineering & Management</li>
+          <li><strong>🌍 From:</strong> Egypt — now based in Oakville, Ontario</li>
+          <li><strong>🛠️ Specialties:</strong> Embedded Systems, Product Design, Financial Planning</li>
+          <li><strong>💬 Languages:</strong> English, Arabic</li>
+          <li><strong>🚀 Interests:</strong> Accessibility tech, renewable energy, automation, digital art</li>
+        </ul>
+      </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Omar Shafie</p>
   </footer>
