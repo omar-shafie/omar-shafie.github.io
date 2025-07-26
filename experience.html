@@ -1,14 +1,43 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Experience – Omar Shafie</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Move this styling to style.css for long-term maintainability */
+    .experience-entry {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      gap: 1rem;
+    }
+
+    .experience-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .experience-content h3 {
+      margin: 0;
+    }
+
+    .experience-content ul {
+      margin: 0.5rem 0 0 1.2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Experience</h1>
   </header>
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -19,17 +48,82 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
   <main>
-    <section id="experience">
+    <section id="professional-experience">
       <h2>Professional Experience</h2>
-      <ul>
-        <li><strong>Financial Operations Team Member</strong>, McMaster Engineering Society (May 2025–Present)</li>
-        <li><strong>VP Finance</strong>, Leadership Development Conference (Sep 2024–Apr 2025)</li>
-        <li><strong>Financial Administrator</strong>, Media Phoenix (Mar 2023–Present)</li>
-        <li><strong>Peer Tutor</strong>, TutorOcean (Nov 2024–Present)</li>
-      </ul>
+
+      <!-- Media Phoenix -->
+      <div class="experience-entry">
+        <img src="assets/images/mediaphoenix.png" alt="Media Phoenix Logo" class="experience-logo" />
+        <div class="experience-content">
+          <h3>Financial Administrator – Media Phoenix</h3>
+          <p><em>Mar 2023 – Present</em></p>
+          <ul>
+            <li>Tracked invoicing, expenses, and reporting for multimedia projects.</li>
+            <li>Maintained spreadsheets and assisted with quarterly tax filing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TutorOcean -->
+      <div class="experience-entry">
+        <img src="assets/images/tutorocean_logo.jpg" alt="TutorOcean Logo" class="experience-logo" />
+        <div class="experience-content">
+          <h3>Peer Tutor – TutorOcean</h3>
+          <p><em>Nov 2024 – Present</em></p>
+          <ul>
+            <li>Delivered 1-on-1 tutoring sessions in Calculus and Physics for university students.</li>
+            <li>Adapted teaching strategies to individual learning styles and course demands.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="extracurricular-experience">
+      <h2>Extracurricular Experience</h2>
+
+      <!-- McMaster Engineering Society -->
+      <div class="experience-entry">
+        <img src="assets/images/mes_logo.jpg" alt="McMaster Logo" class="experience-logo" />
+        <div class="experience-content">
+          <h3>Financial Operations Team Member – McMaster Engineering Society</h3>
+          <p><em>May 2025 – Present</em></p>
+          <ul>
+            <li>Managed budgeting and reimbursement processes for student-led initiatives.</li>
+            <li>Collaborated with executives to oversee $100k+ annual budget.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Leadership Development Conference -->
+      <div class="experience-entry">
+        <img src="assets/images/ldc.png" alt="Leadership Conference Logo" class="experience-logo" />
+        <div class="experience-content">
+          <h3>VP Finance – Leadership Development Conference</h3>
+          <p><em>Sep 2024 – Apr 2025</em></p>
+          <ul>
+            <li>Created and managed financial reports for conference logistics and sponsorship.</li>
+            <li>Oversaw registration platform setup and payment reconciliation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Student Ambassador -->
+      <div class="experience-entry">
+        <img src="assets/images/mcmasterlogo.png" alt="Student Ambassador Logo" class="experience-logo" />
+        <div class="experience-content">
+          <h3>Student Ambassador – McMaster University</h3>
+          <p><em>Jan 2024 – Jun 2025</em></p>
+          <ul>
+            <li>Represented the university at recruitment events and open houses.</li>
+            <li>Provided campus tours and shared student life insights with prospective students.</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Omar Shafie</p>
   </footer>
