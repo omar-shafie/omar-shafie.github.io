@@ -2,90 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About – Omar Shafie</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Suggested additional styling — move to style.css if needed */
-    .about-container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 2rem;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-    }
-
-    .about-photo {
-      flex: 1 1 250px;
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .about-content {
-      flex: 2 1 400px;
-    }
-
-    .about-content h2 {
-      margin-top: 0;
-    }
-
-    .quick-facts {
-      margin-top: 1rem;
-      padding: 0;
-      list-style: none;
-    }
-
-    .quick-facts li {
-      margin-bottom: 0.5rem;
-    }
-  </style>
+  <meta name="description" content="Mechatronics & Management student with a builder’s mindset and operator discipline — passionate about finance, innovation, and systems."/>
+  <meta property="og:title" content="About – Omar Shafie"/>
+  <meta property="og:description" content="Mechatronics & Management student with a builder’s mindset and operator discipline — passionate about finance, innovation, and systems."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Omar Shafie"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <header>
-    <h1>About Me</h1>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="about" class="about-container">
-      <!-- Add your real image in assets/images/about-me.jpg -->
-      <img src="assets/images/about-me.jpg" alt="Omar Shafie Portrait" class="about-photo" />
-
-      <div class="about-content">
-        <h2>Hi, I’m Omar — an engineer with vision and versatility.</h2>
-        <p>
-          I'm a Mechatronics & Management student at McMaster University, driven by a passion for innovation at the intersection of hardware, software, and strategy. My experience spans embedded systems, automation, and financial leadership — all fueled by a desire to create accessible, sustainable solutions that make a real-world impact.
-        </p>
-        <p>
-          Whether I'm prototyping assistive devices, coding for smart locks, or managing a student organization’s budget, I bring curiosity, precision, and people-first thinking to everything I do.
-        </p>
-
-        <ul class="quick-facts">
-          <li><strong>🎓 Program:</strong> Mechatronics Engineering & Management</li>
-          <li><strong>🌍 From:</strong> Egypt — now based in Oakville, Ontario</li>
-          <li><strong>🛠️ Specialties:</strong> Embedded Systems, Product Design, Financial Planning</li>
-          <li><strong>💬 Languages:</strong> English, Arabic</li>
-          <li><strong>🚀 Interests:</strong> Accessibility tech, renewable energy, automation, digital art</li>
-        </ul>
+  <a class="hidden" href="#main">Skip to content</a>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span> <span>Omar Shafie</span></a>
+      <div class="nav-right" role="navigation" aria-label="Main">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="experience.html" class="">Experience</a>
+        <a href="education.html" class="">Education</a>
+        <a href="projects.html" class="">Projects</a>
+        <a href="contact.html" class="">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
       </div>
-    </section>
-  </main>
+    </div>
+  </nav>
+  <main id="main">
 
-  <footer>
-    <p>&copy; 2025 Omar Shafie</p>
+  <section class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="grid" style="grid-template-columns: .9fr 1.1fr;">
+        <div class="card">
+          <img src="assets/images/about-me.jpg" alt="Omar Shafie portrait" style="width:100%;border-radius:12px;border:1px solid rgba(255,255,255,.1)" onerror="this.style.display='none'">
+          <p class="mt16 m0">I’m a Mechatronics & Management student at McMaster University focused on building products that work — technically and financially.</p>
+          <p class="mt8 m0">I thrive where systems thinking meets real-world constraints: embedded devices, product design, and finance operations.</p>
+        </div>
+        <div class="card">
+          <h3 class="m0">Quick Facts</h3>
+          <ul class="mt8">
+            <li><strong>Program:</strong> Mechatronics Engineering & Management</li>
+            <li><strong>Based in:</strong> Oakville, Ontario</li>
+            <li><strong>Strengths:</strong> Embedded Systems, Product Design, Financial Planning</li>
+            <li><strong>Languages:</strong> English, Arabic</li>
+            <li><strong>Interests:</strong> Accessibility tech, renewable energy, automation</li>
+          </ul>
+          <div class="badges mt16">
+            <span class="badge">Finance</span>
+            <span class="badge">Innovation</span>
+            <span class="badge">Mechatronics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+      <p class="m0">&copy; 2025 Omar Shafie · Built with HTML/CSS/JS</p>
+      <div class="socials">
+        <a class="icon-btn" href="mailto:omarshafie05@gmail.com" aria-label="Email">✉️</a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/omar-shafie/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a class="icon-btn" href="https://github.com/omar-shafie" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+      </div>
+    </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

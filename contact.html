@@ -1,34 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact – Omar Shafie</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Email and LinkedIn for connecting with Omar."/>
+  <meta property="og:title" content="Contact – Omar Shafie"/>
+  <meta property="og:description" content="Email and LinkedIn for connecting with Omar."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Omar Shafie"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Contact Me</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
+  <a class="hidden" href="#main">Skip to content</a>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span> <span>Omar Shafie</span></a>
+      <div class="nav-right" role="navigation" aria-label="Main">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="experience.html" class="">Experience</a>
+        <a href="education.html" class="">Education</a>
+        <a href="projects.html" class="">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
+      </div>
+    </div>
   </nav>
-  <main>
-    <section id="contact">
+  <main id="main">
+
+  <section class="section">
+    <div class="container">
       <h2>Get In Touch</h2>
-      <p>Oakville, Ontario, Canada</p>
-      <p>Email: <a href="mailto:omarshafie05@gmail.com">omarshafie05@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/omar-shafie/" target="_blank">linkedin.com/in/omar-shafie</a></p>
-    </section>
+      <div class="grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="card">
+          <h3 class="m0">Contact</h3>
+          <p class="mt8 m0">Oakville, Ontario, Canada</p>
+          <p class="m0 mt8"><strong>Email:</strong> <a href="mailto:omarshafie05@gmail.com">omarshafie05@gmail.com</a></p>
+          <p class="m0 mt8"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/omar-shafie/" target="_blank">linkedin.com/in/omar-shafie</a></p>
+          <div class="mt16">
+            <button class="btn btn-primary" onclick="copyEmail()">Copy Email</button>
+            <a class="btn btn-outline" href="mailto:omarshafie05@gmail.com?subject=Hello%20Omar">Write Email</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="m0">What I’m looking for</h3>
+          <ul class="mt8">
+            <li>Internships or co-ops at the intersection of hardware, software, and business.</li>
+            <li>Opportunities to ship real products with measurable impact.</li>
+            <li>Teams that value initiative, ownership, and learning fast.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
-  <footer>
-    <p>&copy; 2025 Omar Shafie</p>
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+      <p class="m0">&copy; 2025 Omar Shafie · Built with HTML/CSS/JS</p>
+      <div class="socials">
+        <a class="icon-btn" href="mailto:omarshafie05@gmail.com" aria-label="Email">✉️</a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/omar-shafie/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a class="icon-btn" href="https://github.com/omar-shafie" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+      </div>
+    </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

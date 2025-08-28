@@ -4,97 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects – Omar Shafie</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Optional inline styles - move to style.css later */
-    .gallery img {
-      max-width: 300px;
-      margin: 0.5rem;
-      border-radius: 8px;
-    }
-
-    .video-container video {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-
-    .project-detail {
-      margin-bottom: 3rem;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: #f9f9f9;
-    }
-
-    .project-detail h3 {
-      margin-top: 0;
-    }
-  </style>
+  <meta name="description" content="Engineering projects demonstrating embedded systems, prototyping, and product thinking."/>
+  <meta property="og:title" content="Projects – Omar Shafie"/>
+  <meta property="og:description" content="Engineering projects demonstrating embedded systems, prototyping, and product thinking."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Omar Shafie"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Projects</h1>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <a class="hidden" href="#main">Skip to content</a>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span> <span>Omar Shafie</span></a>
+      <div class="nav-right" role="navigation" aria-label="Main">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="experience.html" class="">Experience</a>
+        <a href="education.html" class="">Education</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html" class="">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
+      </div>
+    </div>
   </nav>
+  <main id="main">
 
-  <main>
-
-    <!-- Embedded Smart Lock Puzzle FIRST -->
-    <div class="project-detail">
-      <h3>Embedded Smart Lock Puzzle</h3>
-      <p><em>Feb 2024 – Present | Academic Project</em></p>
-      <ul>
-        <li>Programmed a Cortex ARM microcontroller in C++ to control an RFID-based solenoid lock system, enabling secure access through RFID-embedded 3D-printed figures.</li>
-        <li>Applied principles of embedded systems, digital logic, circuit design, and hardware integration to develop a functional and interactive locking mechanism.</li>
-      </ul>
-
-      <div class="gallery">
-        <img src="assets/images/2TA4_Project_Front.jpg" alt="Front of the Build – Photo 1">
-        <img src="assets/images/2TA4_Project_Wiring.jpg" alt="Messy wiring of the build, including an STMF432 and an arduino – Photo 2">
-      </div>
-
-      <div class="video-container">
-        <video controls>
-          <source src="assets/videos/lock-demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+  <section class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="lead max-w-md">Selected projects that showcase hardware, software, and human-centered design.</p>
+      <div class="stack">
+        
+      <article class="card">
+        <h3>Embedded Smart Lock Puzzle</h3>
+        <div class="meta">Feb 2024 – Present | Academic Project</div>
+        <ul><li>Programmed a Cortex ARM microcontroller in C++ to control an RFID-based solenoid lock system, enabling secure access through RFID-embedded 3D-printed figures.</li><li>Applied principles of embedded systems, digital logic, circuit design, and hardware integration to develop a functional and interactive locking mechanism.</li></ul>
+        <div class="gallery mt16"><img src="assets/images/2TA4_Project_Front.jpg" alt="Embedded Smart Lock Puzzle image" onerror="this.style.display='none'"><img src="assets/images/2TA4_Project_Wiring.jpg" alt="Embedded Smart Lock Puzzle image" onerror="this.style.display='none'"></div>
+        <div class="mt16"><video class="video" controls>
+      <source src="assets/videos/lock-demo.mp4" type="video/mp4">
+    </video></div>
+      </article>
+    
+      <article class="card">
+        <h3>All Grip – Interchangeable Multi-use Reacher Grabber Head</h3>
+        <div class="meta">Jan – Apr 2024 | Group Engineering Design Project</div>
+        <ul><li>Designed and tested an interchangeable grabber head using AutoCAD, enabling versatile use for individuals with limited mobility.</li><li>Conducted ergonomic testing and iterative prototyping to improve grip functionality, strength, and attachment design.</li><li>Worked collaboratively with a multidisciplinary team to meet accessibility, cost, and functionality criteria.</li></ul>
+        <div class="gallery mt16"><img src="assets/images/allgrip1.jpg" alt="All Grip – Interchangeable Multi-use Reacher Grabber Head image" onerror="this.style.display='none'"><img src="assets/images/allgrip2.jpg" alt="All Grip – Interchangeable Multi-use Reacher Grabber Head image" onerror="this.style.display='none'"></div>
+        <div class="mt16"></div>
+      </article>
+    
       </div>
     </div>
-
-    <!-- All Grip Project SECOND -->
-    <!-- All Grip Project -->
-    <div class="project-detail">
-      <h3>All Grip – Interchangeable Multi-use Reacher Grabber Head</h3>
-      <p><em>Jan – Apr 2024 | Group Engineering Design Project</em></p>
-      <ul>
-        <li>Designed and tested an interchangeable grabber head using AutoCAD, enabling versatile use for individuals with limited mobility.</li>
-        <li>Conducted ergonomic testing and iterative prototyping to improve grip functionality, strength, and attachment design.</li>
-        <li>Worked collaboratively with a multidisciplinary team to meet accessibility, cost, and functionality criteria.</li>
-      </ul>
-
-      <!-- Two side-by-side images -->
-      <div class="gallery">
-        <img src="assets/images/allgrip1.jpg" alt="final product">
-        <img src="assets/images/allgrip2.jpg" alt="hands on">
-      </div>
-
-    </div>
+  </section>
 
   </main>
-
-  <footer>
-    <p>&copy; 2025 Omar Shafie</p>
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+      <p class="m0">&copy; 2025 Omar Shafie · Built with HTML/CSS/JS</p>
+      <div class="socials">
+        <a class="icon-btn" href="mailto:omarshafie05@gmail.com" aria-label="Email">✉️</a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/omar-shafie/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a class="icon-btn" href="https://github.com/omar-shafie" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+      </div>
+    </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

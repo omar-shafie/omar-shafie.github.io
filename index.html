@@ -3,106 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Omar Shafie – Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .super-hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: linear-gradient(135deg, #3498db, #2c3e50);
-      color: white;
-      padding: 100px 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 40px rgba(0,0,0,0.15);
-      animation: fadeInUp 1s ease-out;
-    }
-
-    .super-hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-      background: linear-gradient(to right, #ffffff, #ddd);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .super-hero h2 {
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 20px;
-      opacity: 0.9;
-    }
-
-    .super-hero .tagline {
-      font-size: 1.1rem;
-      font-style: italic;
-      margin-bottom: 30px;
-      color: #f0f0f0;
-      max-width: 600px;
-    }
-
-    .btn-glow {
-      padding: 12px 28px;
-      background-color: #e74c3c;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1rem;
-      box-shadow: 0 0 15px #e74c3c88;
-      transition: all 0.3s ease;
-    }
-
-    .btn-glow:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #e74c3cff;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+  <title>Omar Shafie – Entrepreneur • Finance • Innovation • Mechatronics</title>
+  <meta name="description" content="Portfolio of Omar Shafie — young entrepreneur focused on finance, innovation, and mechatronics."/>
+  <meta property="og:title" content="Omar Shafie – Entrepreneur • Finance • Innovation • Mechatronics"/>
+  <meta property="og:description" content="Portfolio of Omar Shafie — young entrepreneur focused on finance, innovation, and mechatronics."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Omar Shafie"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Omar Shafie</h1>
-    <p>Mechatronics Engineering & Management | Embedded Systems | Finance</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <a class="hidden" href="#main">Skip to content</a>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo"></span> <span>Omar Shafie</span></a>
+      <div class="nav-right" role="navigation" aria-label="Main">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="experience.html" class="">Experience</a>
+        <a href="education.html" class="">Education</a>
+        <a href="projects.html" class="">Projects</a>
+        <a href="contact.html" class="">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button>
+      </div>
+    </div>
   </nav>
+  <main id="main">
 
-  <main>
-    <section class="super-hero">
-      <h1>Engineer. Finance. Innovation</h1>
-      <h2>I turn hardware and code into meaningful solutions.</h2>
-      <p class="tagline">
-        From RFID smart locks to modular assistive devices, I’m engineering the future — one circuit, one strategy, one breakthrough at a time.
-      </p>
-      <a href="projects.html" class="btn-glow">Explore My Projects</a>
-    </section>
+  <section class="hero container">
+    <div>
+      <h1 class="hero-title">Building the future at the intersection of <span style="background:linear-gradient(90deg,var(--gold),var(--primary));-webkit-background-clip:text;background-clip:text;color:transparent;">finance</span> and <span style="background:linear-gradient(90deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent;">mechatronics</span>.</h1>
+      <p class="hero-sub max-w-md">I design, build, and validate systems — from embedded hardware to financial operations — to deliver products that win.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="projects.html">See Projects →</a>
+        <a class="btn btn-outline" href="contact.html">Contact Me</a>
+      </div>
+      <div class="badges mt16">
+        <span class="badge">Entrepreneur</span>
+        <span class="badge">Finance Ops</span>
+        <span class="badge">Embedded Systems</span>
+        <span class="badge">Innovation</span>
+      </div>
+    </div>
+
+    <div class="visual">
+      <div class="visual-grid"></div>
+      <div class="visual-kpis">
+        <div class="kpi">
+          <h3>Hands-on mechatronics</h3>
+          <p>Design → prototype → test.</p>
+        </div>
+        <div class="kpi">
+          <h3>Financial discipline</h3>
+          <p>P&L awareness, budgeting, reporting.</p>
+        </div>
+        <div class="kpi">
+          <h3>Team execution</h3>
+          <p>Cross‑functional, fast iteration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Featured Work</h2>
+      <p class="lead">A taste of engineering craft and product thinking — with an operator’s eye for value.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="row">
+            <img class="logo" src="assets/images/2TA4_Project_Front.jpg" alt="Smart Lock" onerror="this.style.display='none'">
+            <div>
+              <h3>Embedded Smart Lock Puzzle</h3>
+              <div class="meta">Cortex ARM · C/C++ · RFID · 3D printing</div>
+              <p class="m0">Secure access system with RFID-embedded figurines; real-time firmware, modular design.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="row">
+            <img class="logo" src="assets/images/allgrip1.jpg" alt="All Grip" onerror="this.style.display='none'">
+            <div>
+              <h3>All Grip — Interchangeable Reacher Head</h3>
+              <div class="meta">Human factors · Rapid prototyping · Testing</div>
+              <p class="m0">Assistive device with swappable heads; improved grip strength and usability.</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="row">
+            <img class="logo" src="assets/images/mediaphoenix.png" alt="Media Phoenix" onerror="this.style.display='none'">
+            <div>
+              <h3>Media Phoenix — Finance Ops</h3>
+              <div class="meta">Budgeting · Invoicing · Reporting</div>
+              <p class="m0">Operational rigor across media projects — spreadsheets, reconciliations, and insights.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="mt24"><a class="btn btn-outline" href="projects.html">Explore all projects</a></div>
+    </div>
+  </section>
+
   </main>
-
-  <footer>
-    <p>“Intellectual growth should commence at birth and only cease at death.” – Albert Einstein</p>
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+      <p class="m0">&copy; 2025 Omar Shafie · Built with HTML/CSS/JS</p>
+      <div class="socials">
+        <a class="icon-btn" href="mailto:omarshafie05@gmail.com" aria-label="Email">✉️</a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/omar-shafie/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a class="icon-btn" href="https://github.com/omar-shafie" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+      </div>
+    </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
