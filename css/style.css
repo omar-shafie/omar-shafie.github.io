@@ -344,3 +344,32 @@ html, body {
   min-height: 88px;               /* consistent box height */
 }
 .visual-kpis { gap: 16px; }       /* slightly larger gap between KPI cards */
+
+/* --- Home collage (Wins & Moments) --- */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+@media (min-width: 1200px){
+  .collage { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+}
+.collage img {
+  width: 100%;
+  height: auto;            /* preserves original photo aspect ratio */
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.02);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.collage img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+/* Make select images span 2 columns on larger screens */
+@media (min-width: 900px){
+  .collage .span-2 { grid-column: span 2; }
+}
+
+/*<img class="span-2" src="assets/images/gallery/award-1.jpg" alt="Receiving award on stage"> (THIS IS TO MAKE A IMAGE LARGER)
