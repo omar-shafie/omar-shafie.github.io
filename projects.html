@@ -40,8 +40,12 @@
         
       <article class="card">
         <h3>Embedded Smart Lock Puzzle</h3>
-        <div class="meta">Feb 2024 – Present | Academic Project</div>
-        <ul><li>Programmed a Cortex ARM microcontroller in C++ to control an RFID-based solenoid lock system, enabling secure access through RFID-embedded 3D-printed figures.</li><li>Applied principles of embedded systems, digital logic, circuit design, and hardware integration to develop a functional and interactive locking mechanism.</li></ul>
+        <div class="meta">Feb 2024 – April 2024</div>
+        <ul><li>Built a puzzle safe requiring a correct RFID tag sequence using four RFID scanners; verified order and state progression.</li>
+          <li>Integrated a speaker with distinct sounds for the four different states of the puzzle.</li>
+          <li>Controlled a solenoid lock to unlock upon successful completion using a motor driver; ensuring reliable actuation through testing.</li>
+          <li>Implemented dual-microcontroller architecture: the STM32 handled the main control logic, while the Arduino managed the RFID scanning. Using UART communication both systems coordinated with seamless operation.</li>
+          <li>Completed extensive wiring, integration, and bench testing; deliering a fully working physical prototype.</li></ul>
         <div class="gallery mt16"><img src="assets/images/2TA4_Project_Front.jpg" alt="Embedded Smart Lock Puzzle image" onerror="this.style.display='none'"><img src="assets/images/2TA4_Project_Wiring.jpg" alt="Embedded Smart Lock Puzzle image" onerror="this.style.display='none'"></div>
         <div class="mt16"><video class="video" controls>
       <source src="assets/videos/lock-demo.mp4" type="video/mp4">
